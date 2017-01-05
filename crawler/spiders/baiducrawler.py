@@ -84,7 +84,7 @@ class BaiduTiebaSpider(scrapy.Spider):
         url = r"http://image.baidu.com/search/acjson?tn=resultjson_com&ipn=rj&ct=201326592&fp=result&queryWord={word}&cl=2&lm=-1&ie=utf-8&oe=utf-8&st=-1&ic=0&word={word}&face=0&istype=2nc=1&pn={pn}&rn=60"
         word = self.codeKeyWords(word)
         
-        pn_num = 1
+        pn_num = 400
         pn = []
         for i in range(pn_num):
             pn.append(i * 60)
